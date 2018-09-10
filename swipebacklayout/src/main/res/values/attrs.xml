@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="scrim_color" format="color" />
+        <attr name="edge_only" format="boolean" />
+        <attr name="edge_size" format="float" />
+        <attr name="percent_to_release" format="float" />
+        <attr name="drag_view_id" format="reference" />
+    </declare-styleable>
+
+</resources>
