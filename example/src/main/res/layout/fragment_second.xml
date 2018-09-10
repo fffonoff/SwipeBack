@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fffonoff.swipeback.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeBackLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:drag_view_id="@id/draggable"
+    app:edge_only="true"
+    app:scrim_color="#c000">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/draggable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#446699"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="#446699"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:navigationIcon="@drawable/arrow_back"
+                app:title="Fragment #2" />
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/lorem_ipsum" />
+        </ScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</com.fffonoff.swipeback.SwipeBackLayout>
