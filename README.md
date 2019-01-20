@@ -1,5 +1,5 @@
 # SwipeBack
-SwipeBack layout allowing you to swipe back just like on iOS
+SwipeBack layout allows you to swipe back just like on iOS
 
 ![](img/demo.gif)
 
